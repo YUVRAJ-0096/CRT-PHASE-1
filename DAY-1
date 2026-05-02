@@ -21,7 +21,7 @@ cout<< result << endl;
 return 0;
 }
 
-Program-3 Check wheather a given side of trainglr are equilaterial or not?
+Program-3 Check wheather a given side of traingle are equilaterial or not?
 #include<iostream>
 using namespace std;
 int main(){
