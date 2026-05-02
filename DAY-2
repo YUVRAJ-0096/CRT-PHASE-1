@@ -180,27 +180,26 @@ Night --Motion(yes--10%)
 using namespace std;
 
 int main() {
-string DayOrNight;
-bool MotionDectected;
+    string DayOrNight;
+    bool MotionDetected;
 
-cout << "is it Day or Night?";
-cin >> DayOrNight;
-cout << "Is Motion Detected?";
-cin>>MotionDetected
+    cout << "Is it Day or Night? ";
+    cin >> DayOrNight;
 
-if(DayOrNight = "Night" || DayOrNight =="Night")
-{
-if(MotionDetected)
-{
-cout<<"Turn on the LED with 10% brightness";
-} else{
-cout<<"Turn off the LED with 10% brightness";
-} else{
-cout<<"Turn off the Lights";
+    cout << "Is Motion Detected? (1 for yes, 0 for no): ";
+    cin >> MotionDetected;
 
-return 0;
+    if (DayOrNight == "Night") {
+        if (MotionDetected) {
+            cout << "Turn on the LED with 10% brightness";
+        } else {
+            cout << "Turn off the LED";
+        }
+    } else {  // Day time
+        cout << "Turn off the Lights";
+    }
 
-}
+    return 0;
 }
 
 
