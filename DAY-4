@@ -1,0 +1,102 @@
+Program-1 Print Number 1 to 5,5 times?
+#include<iostream>
+using namespace std;
+int main(){
+for( int i=1; i<=5; i++){
+   for ( int j=1; j<=5; j++){
+cout<<j;
+}
+cout<<"\n";
+}
+}
+
+Program-2 Print Star?
+#include<iostream>
+using namespace std;
+int main(){
+for( int i=1; i<=5; i++){
+   for ( int j=1; j<=5; j++){
+cout<<"*";
+}
+cout<<"\n";
+}
+}
+
+Problem-3 Print Recatngle?
+#include<iostream>
+using namespace std;
+int main(){
+for( int i=1; i<=10; i++){
+   for ( int j=1; j<=20; j++){
+cout<<"*";
+}
+}
+
+Program-4 Print a triangle with star?
+#include<iostream>
+using namespace std;
+int main(){
+for( int i=1; i <=4; i++){  //ROW 
+   for ( int j=1; j <=i; j++){  // only this line will change // COLMNS
+        cout<<" *";
+}
+cout<<"\n";
+}
+}
+
+Program-5 Print 15 numbers in a triangle shape?
+#include<iostream>
+using namespace std;
+int main(){
+for( int i=1; i <=15; i++){
+   for ( int j=1; j <=i; j++){
+        cout<<" 1";
+}
+cout<<"\n";
+}
+}
+
+Program-6 Print Hollow Square of any number?
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter size"; // for size of square
+    cin>>n;
+    
+    for(int i=1; i<=n; i++) //  for outer column 
+    {
+        for(int j=1; j<=n; j++) // for inner column
+        {
+           if(i==1 || i==n|| j==1 || j==n) // logic,condition 
+           cout<<"*";  // star
+           else
+           cout<<" "; // space
+        }
+        cout<<endl;
+    }
+return 0;
+}
+
+
+Program-7 Print the mirror image of a right-angle triangle?
+#include<iostream>
+using namespace std;
+    
+for( int i=1; i <=5; i++){
+    for( int j= n-i; j >=1; j--){
+        cout<<"*";
+}
+for(int i=1; i<i;i++){
+    cout<<*;
+}
+cout<<"\n";
+}
+}
+
+
+
+
+
+
+
