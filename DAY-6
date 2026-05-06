@@ -1,1 +1,141 @@
-Program-1 Print 
+Program-1 Print Price of coffee?
+#include<iostream>
+using namespace std;
+
+
+int Totalamount(int coffee)
+{
+    return coffee * 30;
+}
+
+int main()
+{
+    cout << Totalamount(90);
+    return 0;
+}
+
+
+Program-2 Print Store Discount Program?
+#include<iostream>
+using namespace std;
+
+	int Totalamount(int amount)
+	{
+	
+		return amount-(amount *100/1000);
+	}
+
+	int main()
+	{
+		cout << Totalamount(1000);
+
+	}
+
+Program-3 Print Store Discount Program?
+#include<iostream>
+using namespace std;
+ 
+ void setTemperature(){
+     cout<< "Temperature Set to 22 C"<<"\n";
+ }
+ 
+ void setTemperature(double temp){
+     cout<< "Temperature Set to "<< temp<<" C"<<"\n";
+ }
+ 
+ void setTemperature(string mode){
+     if(mode =="ECO"{
+         cout<<"Temperature Set to 24 c"<<"\n";
+     } else if (mode =="TURBO"){
+         cout << "Temperture Set to 18 C" <<"\n";
+     }
+}
+int main(){
+setTemperature();
+setTemperature(20.5);
+setTemperature("ECO);
+}
+
+
+
+// Program-4 Pointers?
+// declaration,intialization,arthmentic operation.
+
+#include<iostream>
+using namespace std;
+ int main(){
+     int a = 10;
+     int *ptr1 = &a;
+     
+     int b = 20;
+     int *ptr2 = &b;
+     
+     int c = a + b;
+     int c = *ptr1 + *ptr2;
+     cout<<c;
+     }
+
+Program-5 Swapping of 2 variable's value using pointers and using a function?
+
+#include<iostream>
+using namespace std;
+
+void swap (int *ptr1, int *ptr2){
+    int temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+    
+}
+int main(){
+    int a,b;
+    cin >> a;
+    cin >> b;
+    swap(&a, &b);
+    cout << a << " " << b;
+  
+    return 0;
+}
+
+
+Program-6 classes/objects?
+#include<iostream>
+using namespace std;
+class Student {
+public:
+	string name;
+	int age;
+
+	void introduce() {
+		cout<<"hi there, this person name is " << name << "and his age is" << age << "\n";
+	}
+};
+
+int main(){
+    Student s1;
+    s1.name = " vikash meena ";
+    s1.age = 24;
+    s1.introduce();
+    return 0;
+}
+
+// Program-7 Access Specifier?
+ //  Access of types: public, private, protected.
+ 
+ #include<iostream>
+ using namespace std;
+ 
+ class publicPark{
+     public:
+     void enter(){
+         cout << " Anyone can enter in the park";
+     }
+ };
+ int main(){
+     publicPark p;
+     p.enter();
+ }
+
+
+
+
+
