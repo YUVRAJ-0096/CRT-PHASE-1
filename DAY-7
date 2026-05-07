@@ -65,7 +65,31 @@ int main() {
 }
 
 
+//Program-4
+// Parameterized Constructer?
 
+#include<iostream>
+using namespace std;
+
+class Student {
+public:
+	string name;
+	int age;
+	Student(string studentName, int studentAge){
+	    name = studentName;
+	    age = studentAge;
+	}
+
+	void introduce() {
+		cout<<"hi there, this person name is " << name << "and his age is" << age << "\n";
+	}
+};
+
+int main(){
+    Student s1("vikash meena", 20);
+    s1.introduce();
+    
+}
 
 
 
