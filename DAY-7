@@ -1,1 +1,72 @@
-Program-1 Print 
+Program-1 Call By Value & Call By Reference?
+
+#include<iostream>
+using namespace std;
+
+void updatebyValue(int a) {
+	a = 900;
+}
+
+void updateByRefrenece(int &a) {
+	a = 900;
+}
+
+int main() {
+	int original = 700;
+	updatebyValue(original);
+	cout << original <<"\n";
+	updateByRefrenece(original);
+	cout << original;
+	
+	return 0;
+}
+
+
+//Program-2 
+//Access specifier
+// private
+#include<iostream>
+using namespace std;
+
+class BankAccount{
+    int balance =5000;
+
+    
+public:    
+  void showbalance(){ 
+      cout<<balance;
+}
+};
+int main(){
+    BankAccount obj1;
+    obj1.showbalance();
+    
+}
+
+//Program-3
+// Protected Access specifier
+
+#include<iostream>
+using namespace std;
+
+class Parent {
+protected:
+	int secretCode = 1234;
+};
+class child: public Parent {
+public:
+	void accessLocker() {
+		cout << secretCode;
+	}
+};
+int main() {
+	child obj1;
+	obj1.accessLocker();
+}
+
+
+
+
+
+
+
