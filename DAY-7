@@ -155,7 +155,7 @@ int main() {
 
 
 //Program-7
-// Area of Rectangle?
+// Perimeter of Traingle?
 
 
 #include <iostream>
