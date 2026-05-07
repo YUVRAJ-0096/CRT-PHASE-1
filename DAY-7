@@ -1,4 +1,4 @@
-Program-1 Call By Value & Call By Reference?
+//Program-1 Call By Value & Call By Reference?
 
 #include<iostream>
 using namespace std;
@@ -66,7 +66,7 @@ int main() {
 
 
 //Program-4
-// Parameterized Constructer?
+// Parameterized Constructor?
 
 #include<iostream>
 using namespace std;
@@ -88,8 +88,110 @@ public:
 int main(){
     Student s1("vikash meena", 20);
     s1.introduce();
+    }
+
+
+
+//Program-5
+// Wifi/Password?
+
+#include<iostream>
+using namespace std;
+
+class Wifi {
+public:
+	string name;
+	int Password;
+	Wifi(string Wifi, int Password){
+	    Wifi = Wifi;
+	    Password = Password;
+	}
+
+	void introduce() {
+		cout << "yuvraj Wifi 1234 Password\n";
+	}
+};
+
+int main(){
+    Wifi s1("yuvraj", 1234);
+    s1.introduce();
     
 }
+
+
+//Program-6
+// Area of Rectangle?
+
+
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+public:
+    int length;
+    int breadth;
+
+    
+    Rectangle(int l, int b) {
+        length = l;
+        breadth = b;
+    }
+
+    
+    void Area() {
+        int area = length * breadth;
+        cout << "Area of Rectangle = " << area << endl;
+    }
+};
+
+int main() {
+
+    Rectangle s1(70, 1000);
+
+    s1.Area();
+
+    return 0;
+}
+
+
+//Program-7
+// Area of Rectangle?
+
+
+#include <iostream>
+using namespace std;
+
+class Triangle {
+public:
+    int a;
+    int b;
+    int c;
+
+    
+    Triangle(int x, int y, int z) {
+        a = x;
+        b = y;
+        c = z;
+    }
+
+    
+    void Perimeter() {
+        int perimeter = a + b + c;
+        cout << "Perimeter of Triangle = " << perimeter << endl;
+    }
+};
+
+int main() {
+
+    Triangle s1(70, 89, 90);
+
+    s1.Perimeter();
+
+    return 0;
+}
+
+
+
 
 
 
