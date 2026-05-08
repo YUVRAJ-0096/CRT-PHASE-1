@@ -1,0 +1,117 @@
+Program-1 Single Inheritance?
+#include<iostream>
+using namespace std;
+
+class Vehicle
+{
+public:
+    void Start()
+    {
+        cout << "Vehicle Start" << "\n";
+    }
+};
+
+class Car : public Vehicle
+{
+public:
+    void Drive()
+    {
+        cout << "Car is running" << "\n";
+    }
+};
+
+int main()
+{
+    Car obj1;
+    obj1.Start();
+    obj1.Drive();
+
+    return 0;
+}
+
+Program-2 Multilevel Inheritance?
+#include<iostream>
+using namespace std;
+
+class Vehicle
+{
+public:
+    void Start()
+    {
+        cout << "Vehicle Start" << "\n";
+    }
+};
+
+class Car : public Vehicle
+{
+public:
+    void Drive()
+    {
+        cout << "Car is running" << "\n";
+    }
+};
+
+class Speedometer : public Car
+{
+public:
+    void Speed()
+    {
+        cout << "Car is running at the speed of 100" << "\n";
+    }
+};
+
+int main()
+{
+    Speedometer obj1;
+
+    obj1.Start();
+    obj1.Drive();
+    obj1.Speed();
+
+    return 0;
+}
+
+Program-3 Multilevel Inheritance?
+#include<iostream>
+using namespace std;
+
+class Vehicle
+{
+public:
+    void Start()
+    {
+        cout << "Vehicle Start" << "\n";
+    }
+};
+
+class Bike : public Vehicle
+{
+public:
+    void Drive()
+    {
+        cout << "Bike is running" << "\n";
+    }
+};
+
+class Car : public Vehicle
+{
+public:
+    void Drive()
+    {
+        cout << "Car is running" << "\n";
+    }
+};
+
+int main()
+{
+    Car c;
+    Bike b;
+
+    c.Start();
+    c.Drive();
+
+    b.Start();
+    b.Drive();
+
+    return 0;
+}
