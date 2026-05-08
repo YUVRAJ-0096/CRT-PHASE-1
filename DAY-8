@@ -113,5 +113,127 @@ int main()
     b.Start();
     b.Drive();
 
+   return 0;
+}
+
+
+Program-4 Multiple Inheritance?
+#include<iostream>
+using namespace std;
+
+class Papa
+{
+public:
+	void paisePapa()
+	{
+		cout << "Paise dedo Papa" << "\n";
+	}
+};
+
+class Mummy : public Papa
+{
+public:
+	void paiseMummy()
+	{
+		cout << "Paise dedo Mummy" << "\n";
+	}
+};
+
+int main()
+{
+	Mummy m;
+
+	m.paisePapa();
+	m.paiseMummy();
+
+	return 0;
+}
+
+
+Program-5 Hybrid Inheritance, Diamond Problem Solution, Virtual Base Class?
+#include<iostream>
+using namespace std;
+
+class A {
+public:
+      void print() {
+          cout <<"HI there";
+      }
+};
+
+class B :  virtual public A {
+};
+class C :  virtual public A {
+};
+class D :  virtual public B , public C {
+};
+int main(){
+    D obj1;
+    obj1.print();
+}
+
+Program-6 Encapsulation?
+
+#include<iostream>
+using namespace std;
+
+class BankAccount {
+private:
+	int BankBalance;
+
+	void setBalace(int amount) {
+		if(amount >= 0) {
+			BankBalance = amount;
+		} else {
+			cout<<"enter a valid number";
+		}
+	}
+	int getBalance() {
+		return BankBalance;
+
+	}
+};
+int main() {
+   BankAccount obj1;
+   obj1.setBalace(4000);
+   cout<<obj1.getBalance();
+}
+
+
+Program-7 Encapsulation
+#include<iostream>
+using namespace std;
+
+class BankAccount {
+private:
+    int BankBalance;
+
+public:
+    
+    void setBalance(int amount) {
+        if(amount >= 0) {
+            BankBalance = amount;
+        } else {
+            cout << "Enter a valid number";
+        }
+    }
+
+    
+    int getBalance() {
+        return BankBalance;
+    }
+};
+
+int main() {
+    BankAccount obj1;
+
+    obj1.setBalance(8000);
+
+    cout << obj1.getBalance();
+
     return 0;
 }
+
+
+
+
