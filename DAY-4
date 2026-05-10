@@ -11,6 +11,7 @@ cout<<"\n";
 }
 
 Program-2 Print Star?
+Task: Create a 5x5 star grid
 #include<iostream>
 using namespace std;
 int main(){
@@ -22,7 +23,8 @@ cout<<"\n";
 }
 }
 
-Problem-3 Print Recatngle?
+Problem-3 Print Rectangle?
+Task: Create a rectangle.
 #include<iostream>
 using namespace std;
 int main(){
@@ -32,7 +34,8 @@ cout<<"*";
 }
 }
 
-Program-4 Print a triangle with star?
+Program-4 Print a triangle with a star?
+Task: Create a 5x5 star grid
 #include<iostream>
 using namespace std;
 int main(){
@@ -80,6 +83,7 @@ return 0;
 
 
 Program-7 Print the mirror image of a right-angle triangle?
+Task: Right-aligned growing triangle.
 #include<iostream>
 using namespace std;
     
