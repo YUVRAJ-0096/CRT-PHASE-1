@@ -31,7 +31,8 @@ using namespace std;
 
 	}
 
-Program-3 Print Store Discount Program?
+Program-3 Print SMART AC REMOTE (OVERLOADING) 
+Task: Control AC via defaults, manual temp, or modes.
 #include<iostream>
 using namespace std;
  
@@ -58,8 +59,8 @@ setTemperature("ECO);
 
 
 
-// Program-4 Pointers?
-// declaration,intialization,arthmentic operation.
+Program-4 POINTER ARITHMETIC?
+Task: Sum two variables using their memory addresses.
 
 #include<iostream>
 using namespace std;
@@ -76,6 +77,7 @@ using namespace std;
      }
 
 Program-5 Swapping of 2 variable's value using pointers and using a function?
+Task: Permanently swap values using pointers.
 
 #include<iostream>
 using namespace std;
@@ -98,6 +100,7 @@ int main(){
 
 
 Program-6 classes/objects?
+Task: Define a Student blueprint and create instances.
 #include<iostream>
 using namespace std;
 class Student {
@@ -118,8 +121,9 @@ int main(){
     return 0;
 }
 
-// Program-7 Access Specifier?
- //  Access of types: public, private, protected.
+Program-7 Access Specifier?
+Task: Demonstrating the 'public' keyword for global access
+Access types: public, private, protected.
  
  #include<iostream>
  using namespace std;
