@@ -90,7 +90,14 @@ int main(){
     s1.introduce();
     }
 
-
+ 4.2 Default Constructor
+class wifiConnection {
+public:    
+     string networkName;
+     int password;
+     wifiConnection() { networkName = "ACT Fibre Net"; password = 1234; }
+     void showDetails(){ cout << networkName << " " << password; }
+ };
 
 //Program-5
 // Wifi/Password?
@@ -155,7 +162,7 @@ int main() {
 
 
 //Program-7
-// Perimeter of Traingle?
+// Perimeter of Triangle?
 
 
 #include <iostream>
