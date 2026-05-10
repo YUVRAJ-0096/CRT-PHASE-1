@@ -72,6 +72,9 @@ int main()
 
 
 Program-4 Ternary operator?
+Task: Inline logic to find the maximum number.
+
+
 #include<iostream>
 
 using namespace std;
@@ -95,6 +98,8 @@ int main(){
 
 
 Program-5 Switch case Problem Name -- Day Name?
+Task: Map numeric inputs to day names.
+
 #include<iostream>
 using namespace std;
 
