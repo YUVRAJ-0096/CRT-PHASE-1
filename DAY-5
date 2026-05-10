@@ -10,7 +10,9 @@ bellring();
 }
 
 
-Program-2 No argument, No return values?
+Program-2 BASIC FUNCTION VOID? 
+Task: Define and call a simple message function.
+
 #include<iostream>
 using namesapce std;
 void PrintMessage(){
@@ -33,7 +35,7 @@ int main(){
     sendMessage("Bjp wons");
 }
 
-// Program-4 No argument, No return values?
+Program-4 No argument, No return values?
 #include<iostream>
 using namespace std;
 
@@ -46,6 +48,7 @@ int main(){
 
 
 Program-5  Make an area calculation function?
+Task: Function with parameters and return value.
 #include<iostream>
 using namespace std;
 int calculateArea(int length, int widht){
@@ -71,23 +74,39 @@ int main(){
 
 }
 
+ PROBLEM-7 FUNCTION OVERLOADING?
+ Task: Use the same name 'add' for different types/counts
 
-Program-7 Function Overloading?
-
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int add(int a, int b,int c) {
-	return a + b + c;
+// Adding two integers
+int add(int a, int b){
+    return a + b;
 }
 
+// Adding two doubles
+double add(double a, double b){
+    return a + b;
+}
+
+// Adding three integers
+int add(int a, int b, int c){
+    return a + b + c;
+}
+
+// Adding four floats
 float add(float a, float b, float c, float d){
     return a + b + c + d;
 }
-int main() {
-	cout <<add(5,2) <<"\n";
-	cout <<add(5,2,3)<<"\n";
-	cout <<add(5.0, 2.3, 5.5,7.9);
 
-	return 0;
+int main() {
+    cout << "Int Add (2): " << add(5, 2) << "\n";
+    cout << "Double Add:   " << add(5.5, 7.9) <<"\n";
+    cout << "Int Add (3): " << add(5, 2, 3) << "\n";
+    cout << "Float Add(4): " << add(5.0f, 2.3f, 5.5f, 7.9f) <<"\n";
+    
+    return 0;
 }
+
+
