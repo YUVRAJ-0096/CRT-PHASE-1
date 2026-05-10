@@ -1,9 +1,9 @@
-Program-1 Convert celcius to fahrenheit?
+Program-1 Convert Celsius to Fahrenheit?
 #include<iostream>
 using namespace std;
 int main(){
-double celcius;
-double fahrenheit;
+double Celsius;
+double Fahrenheit;
 cin>>celcius;
 fahrenheit=(celcius*9.0/5.0)+32;;
 cout << fahrenheit << endl;
@@ -11,6 +11,8 @@ return 0;
 }
 
 Program-2 Local and global variable?
+Task: Demonstrate scope and type casting.
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -21,7 +23,7 @@ cout<< result << endl;
 return 0;
 }
 
-Program-3 Check wheather a given side of traingle are equilaterial or not?
+Program-3 Check whether a given side of a triangle is equilateral or not?
 #include<iostream>
 using namespace std;
 int main(){
@@ -33,6 +35,8 @@ return 0;
 }
 
 Program-4 Swapping of values? a=10; -5/a=5; -10
+Task: Exchange values using a temporary variable?
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -45,7 +49,58 @@ cout << a << "\n" << b << endl;
 return 0;
 }
 
-Program-5 Login credentials?
+PROBLEM-5 AREA OF SHAPES 
+Task: Selection logic for Circle, Rect, & Triangle?
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    cin >> choice;
+    
+    if(choice == 1){
+        double radius;
+        cin >> radius;
+        cout << 3.14 * radius * radius << endl;
+    } else if (choice == 2) {
+        double length, width;
+        cin >> length >> width;
+        cout << length * width<< endl;
+    } else if (choice == 3) {
+        double base, height;
+        cin >> base >> height;
+        cout << 0.5 * base * height << endl;
+    } else {
+        cout << "invalid Choice" << endl;
+    }
+    return 0;
+    
+}
+
+PROBLEM-6 SUM & AVERAGE 
+Task: Calculate the total and the mean of 3 numbers.
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int a, b, c, sum;
+    float average;
+    
+    cin >> a >> b >> c;
+    sum = a + b + c;
+    avergae = sum / 3.0;
+    
+    cout << sum << endl;
+    cout << avergae << endl;
+    
+    return 0;
+}
+
+Program-7 Login credentials?
+Task: Verify ID and Password with logic gates?
+
 #include<iostream>
 using namespace std;
 int main(){
