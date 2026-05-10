@@ -71,7 +71,7 @@ int main()
     return 0;
 }
 
-Program-3 Multilevel Inheritance?
+Program-3 Hierarchical Inheritance?
 #include<iostream>
 using namespace std;
 
