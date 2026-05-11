@@ -1,5 +1,6 @@
-LeetCode 189
-Rotate Array
+//DSA
+//LeetCode 189
+//Rotate Array
 class Solution {
 public:
 
@@ -20,8 +21,8 @@ public:
     }
 };
 
-LeetCode 344
-Reverse String
+//LeetCode 344
+//Reverse String
 class Solution {
 public:
     void reverseString(vector<char>& s) {
@@ -38,8 +39,8 @@ public:
     }
 };
 
-Leetcode 796
-Rotate String 
+//Leetcode 796
+//Rotate String 
 class Solution {
 public:
     bool rotateString(string s, string goal) {
@@ -55,8 +56,8 @@ public:
 };
 
 
-LeetCode 242
-Valid Anagram
+//LeetCode 242
+//Valid Anagram
 class Solution {
 public:
     bool isAnagram(string s, string t) {
