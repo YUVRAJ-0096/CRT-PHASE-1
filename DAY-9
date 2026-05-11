@@ -128,5 +128,77 @@ int main() {
         cout << &arr[i] << " ";
     }
 
+
+Program-1 Making a 2-D Array?
+#include<iostream>
+using namespace std;
+int main() {
+	int arr [2] [2];
+
+    for( int i = 1; i <= 2; i++){
+        for( int j = 1; j <= 2; j++){
+         cin >> arr[i][j];
+         }
+         }
+}
+
+Program-2 2-D Array?
+#include<iostream>
+using namespace std;
+int main() {
+	int arr [2] [2];
+
+    for( int i = 1; i <= 2; i++){
+        for( int j = 1; j <= 2; j++){
+         cin >> arr[i][j];
+         }
+         }
+    cout <<"here is your 2 day array" << "\n";    
+    for( int i = 0; i < 2; i++){
+        for( int j = 0; j < 2; j++){
+         cin >> arr[i][j];
+         }
+         cout <<"\n";
+         }
+         return 0;
+}
+
+Program-3 Sum of elements of 2-D array?
+#include<iostream>
+using namespace std;
+int main() {
+	int arr [2][2];
+	int sum = 0;
+	
+	for(int i = 0; i < 2; i++){
+	    for(int j = 0; j < 2; j++){
+	        cin >> arr[i][j];
+	        sum = sum + arr[i][j];
+	    }
+	}
+	cout << sum;
+}
+
+Program-4 Search an element in a 2-D Array?
+#include<iostream>
+using namespace std;
+int main() {
+	int arr [2][2] = {{10,29},
+		{30,40}
+	};
+
+	int searchelement;
+    cin >> searchelement;
+
+	for(int i = 0; i < 2; i++) {
+		for(int j = 0; j < 2; j++) {
+			if(arr[i][j] == searchelement) {
+				cout << i << " "<< j;
+				return 0;
+			}
+		}
+	}
+	cout << "element not found";
+}
     return 0;
 }
